@@ -4,7 +4,7 @@
   <id>https://kksoo0131.github.io//</id>
   <title>KksDev</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-27T10:43:46+09:00</updated>
+  <updated>2023-06-27T16:02:55+09:00</updated>
   <author>
     <name>kksoo0131</name>
     <uri>https://kksoo0131.github.io//</uri>
@@ -20,6 +20,56 @@
 
   
   <entry>
+    <title>출력문으로 비교해보는 C와 C++</title>
+    <link href="https://kksoo0131.github.io//posts/this-is-cpp-1/" rel="alternate" type="text/html" title="출력문으로 비교해보는 C와 C++" />
+    <published>2023-06-27T15:04:00+09:00</published>
+  
+    <updated>2023-06-27T15:04:00+09:00</updated>
+  
+    <id>https://kksoo0131.github.io//posts/this-is-cpp-1/</id>
+    <content src="https://kksoo0131.github.io//posts/this-is-cpp-1/" />
+    <author>
+      <name>kksoo0131</name>
+    </author>
+
+  
+    
+    <category term="Language" />
+    
+    <category term="C++" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      C
+C에서는 prinf()를 사용하여 출력을 하려고 한다면 사용자는 데이터의 형식을 지정하고 형식에 맞게 값을 입력하는등 printf()의 사용방법에 대해 알아야한다.
+printf("%d"\n, 1);
+printf("%f"\n, 0.1);
+
+C++
+C++에서는 출력을 하려고 할때 출력하고싶은 문장을 std::cout 객체에 전달하기만 하면 객체 내부에서 문장을 알아서 출력해준다.
+std::cout &amp;gt;&amp;gt; "출력하고싶은문장" &amp;gt;&amp;gt; std::endl;
+
+
+C++의 장점
+이러한 구조는 C++의 객체 지향 프로그래밍 특성 중 하나인 추상화에 대한 이야기 입니다.
+
+개발자는 큰 틀에서 구조를 결정하고 세부적인 구현은 나중에 처리할 수 있고 
+코드의 가독성과 유지 보수성을 향상시키는데 도움을 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>GitHub Blog 만들기 (1. GitHub Page 생성)</title>
     <link href="https://kksoo0131.github.io//posts/make-github-blog/" rel="alternate" type="text/html" title="GitHub Blog 만들기 (1. GitHub Page 생성)" />
     <published>2023-06-27T09:28:00+09:00</published>
@@ -29,7 +79,7 @@
     <id>https://kksoo0131.github.io//posts/make-github-blog/</id>
     <content src="https://kksoo0131.github.io//posts/make-github-blog/" />
     <author>
-      <name>cotes</name>
+      <name>kksoo0131</name>
     </author>
 
   
@@ -52,7 +102,7 @@
 
 GitHub에서 무료로 제공하는 정적 웹 호스팅 서비스 별도의 웹 서버를 구축하거나 관리할 필요없이 GitHub를 통해 웹 사이트를 배포할 수 있습니다.
 
-우리는 GitHub repository에 Jekyll로 생성한 웹 사이트를 저장해서 Blog를 생성해 볼껍니다.
+GitHub Page에 Jekyll로 생성한 웹 사이트를 올려서 Blog를 만들수 있습니다.
 
 1. GitHub Page 생성
 
@@ -70,47 +120,7 @@ GitHub에서 무료로 제공하는 정적 웹 호스팅 서비스 별도의 웹
 
 Jekyll ?
 
-R...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="https://kksoo0131.github.io//posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2023-06-26T16:58:03+09:00</updated>
-  
-    <id>https://kksoo0131.github.io//posts/write-a-new-post/</id>
-    <content src="https://kksoo0131.github.io//posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
+Ruby 기반의 정적 ...
     </summary>
   
 

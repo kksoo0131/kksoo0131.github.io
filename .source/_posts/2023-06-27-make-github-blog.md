@@ -1,6 +1,6 @@
 ---
 title: GitHub Blog 만들기 (1. GitHub Page 생성)
-author: cotes
+author: kksoo0131
 date: 2023-06-27 09:28:00 +0900
 categories: [GitHub, Blog]
 tags: [writing]
@@ -11,13 +11,13 @@ render_with_liquid: false
 
 GitHub에서 무료로 제공하는 정적 웹 호스팅 서비스 별도의 웹 서버를 구축하거나 관리할 필요없이 GitHub를 통해 웹 사이트를 배포할 수 있습니다.
 
-우리는 GitHub repository에 Jekyll로 생성한 웹 사이트를 저장해서 Blog를 생성해 볼껍니다.
+GitHub Page에 Jekyll로 생성한 웹 사이트를 올려서 Blog를 만들수 있습니다.
 
 ### 1. GitHub Page 생성
 
 - repository의 이름을 `USERNAME.github.io`로 생성한다.
 
-- repository에 저장된 웹 사이트를 https://USERNAME.github.io를 통해 접속할 수 있게된다.
+- repository에 저장된 웹 사이트를 `https://USERNAME.github.io`를 통해 접속할 수 있게된다.
 
 - GitHub Desktop을 이용해서 해당 repository의 clone을 자신의 컴퓨터에 만들어줍니다.
 
@@ -29,7 +29,7 @@ Ruby 기반의 정적 웹 사이트 생성기로 마크다운 이나 HTML과 같
 
 - Jekyll는 Ruby 기반이기 때문에 Jekyll 설치하려면 Ruby를 먼저 설치 해주어야 합니다.
 
-- https://rubyinstaller.org/downloads/ 에서 Ruby+Devkit를 다운로드 합니다.
+- [Ruby 공식 설치 사이트](https://rubyinstaller.org/downloads/) 에서 Ruby+Devkit를 다운로드 합니다.
 
 - 설치파일을 실행 후, 별 다른 수정 없이 default 값으로 설치를 진행합니다.
 
@@ -57,7 +57,7 @@ Ruby 기반의 정적 웹 사이트 생성기로 마크다운 이나 HTML과 같
 
 ### 4. 원하는 테마 적용
 
-- 구글링을 통해 원하는 테마를 다운로드 받습니다. ex ) https://github.com/cotes2020/jekyll-theme-chirpy
+- 구글링을 통해 원하는 테마를 다운로드 받습니다. ex ) [jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
 
 - 다운로드 받은 파일의 압축을 풀어 컴퓨터에 repository clone폴더에 넣어줍니다.
 
@@ -71,7 +71,7 @@ Ruby 기반의 정적 웹 사이트 생성기로 마크다운 이나 HTML과 같
     bundle exec jekyll serve
     ```
 
-- http://127.0.0.1:4000/ 에 접속해 웹사이트가 제대로 생성되었는지 확인합니다.
+- [로컬 주소](http://127.0.0.1:4000/) 에 접속해 웹사이트가 제대로 생성되었는지 확인합니다.
 
 
 ### 5. Push
@@ -89,5 +89,5 @@ Ruby 기반의 정적 웹 사이트 생성기로 마크다운 이나 HTML과 같
 
 - Page가 업데이트된 시간을 확인하고, 업데이트 됬으면
 
-- https://USERNAME.github.io에 접속해서 확인합니다.
+- `https://USERNAME.github.io`에 접속해서 확인합니다.
 
