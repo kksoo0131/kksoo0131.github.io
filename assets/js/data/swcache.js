@@ -39,7 +39,7 @@ const allowedDomains = [
         'www.google-analytics.com',
     
 
-    'localhost:4000',
+    'kksoo0131.github.io/',
 
     
 
