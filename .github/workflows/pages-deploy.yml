@@ -44,7 +44,13 @@ jobs:
         with:
           ruby-version: 3   # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
+      
+      - name: Install Dependencies
+        run: bundle install
 
+      - name: Build Assets
+        run: npm i && npm run build
+        
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
