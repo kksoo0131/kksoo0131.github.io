@@ -18,7 +18,7 @@ jekyll-theme-chirpy 테마를 이용해서 블로그를 생성했는데 마음�
 ![현재 사이드바 카테고리 사진](/assets/img/post/2023-07-06-make-github-blog-2-1.jpg)
 
 
-카테고리 목록페이지는 없애고 사이드바에 카테고리가 바로 뜨도록 하려고 한다. 
+사이드 바에 여러 카테고리가 나오고 클릭했을때 바로 해당 카테고리로 넘어가게 하려고한다.
 
 sidebar에 대한 html코드는 _includes/sidebar.html에서 찾을수 있었다.
 
@@ -40,20 +40,21 @@ sidebar에 대한 html코드는 _includes/sidebar.html에서 찾을수 있었다
 이 코드는 site.tabs에 정의된 정보를 기반으로 탭을 생성하고
 현재 페이지인경우 active 클래스를 추가해 활성화 상태로 표시한다.
 
-탭에 대한 정보는 _tabs폴더에 여기서 일단 카테고리 탭은 삭제했다.
+탭에 대한 정보는 _tabs폴더에 여기서 원래 있던 카테고리 탭은 삭제했다.
 
 ```html
-<!-- categories -->
-    {% for category in site.categories %}
-    <li class="nav-item{% if category.url contains category[0] %}{{ " active" }}{% endif %}">
-      <a href="{{ '/' | relative_url }}categories/{{category[0] | downcase | url_encode}}/" class="nav-link">
-        <i class="fa-fw fas fa-foleder"></i>
-        <span>{{ category[0]}}</span>
-      </a>
-    </li>
-    {% endfor %}
+ {% for category in site.categories %}
+    {% capture _category_url %}/category/{{ category[0] | downcase | url_encode }}/{% endcapture %}
+    <li class="nav-item{% if category.url contains category[0] %}{{ active }}{% endif %}">
+    <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}
+      <i class="fa-fw fas fa-foleder"></i>
+      <span>{{ category[0]}}</span>
+    </a>
+  </li>
+  {% endfor %}
 ```
 그리고 사이드 바의 홈 버튼과 다른 탭들 사이에 카테고리의 목록이 나오게 새로 코드를 추가했다.
+원래 카테고리 목록 페이지에서 카테고리 페이지로 넘어가는 부분을 옮겨왔다.
 
 ## +
 CI의 Test과정에서 문제가 발생했다.
@@ -62,7 +63,3 @@ CI의 Test과정에서 문제가 발생했다.
 ## 다음 수정해야 할 내용
 
     1. 하위 카테고리 구분
-
-    2. 특정 페이지만 사이드 바가 깨지는 문제
-
-    3. 카테고리명에 특수문자를 넣을수있는 방법
