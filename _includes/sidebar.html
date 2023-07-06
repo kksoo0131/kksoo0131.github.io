@@ -32,6 +32,17 @@
         <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
       </a>
     </li>
+
+  <!-- categories -->
+  {% for category in site.categories %}
+  <li class="nav-item{% if category.url contains category[0] %}{{ " active" }}{% endif %}">
+    <a href="{{ '/' | relative_url }}categories/{{category[0]}}/" class="nav-link">
+      <i class="fa-fw fas fa-foleder"></i>
+      <span>{{ category[0]}}</span>
+    </a>
+  </li>
+  {% endfor %}
+
     <!-- the real tabs -->
     {% for tab in site.tabs %}
       <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">

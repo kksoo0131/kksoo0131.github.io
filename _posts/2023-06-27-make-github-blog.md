@@ -1,8 +1,8 @@
 ---
-title: GitHub Blog 만들기 (1. GitHub Page 생성)
+title: GitHub Page 만들기
 author: kksoo0131
 date: 2023-06-27 09:28:00 +0900
-categories: [GitHub, Blog]
+categories: [GitHub]
 tags: [writing]
 render_with_liquid: false
 ---
