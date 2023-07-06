@@ -43,10 +43,9 @@ sidebar에 대한 html코드는 _includes/sidebar.html에서 찾을수 있었다
 탭에 대한 정보는 _tabs폴더에 여기서 원래 있던 카테고리 탭은 삭제했다.
 
 ```html
- {% for category in site.categories %}
-    {% capture _category_url %}/category/{{ category[0] | downcase | url_encode }}/{% endcapture %}
+  {% for category in site.categories %}
     <li class="nav-item{% if category.url contains category[0] %}{{ active }}{% endif %}">
-    <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}
+    <a href="{{ '/categories/' | relative_url }}{{category[0] | downcase | url_encode}}" class="mx-2">{{ category_name }}
       <i class="fa-fw fas fa-foleder"></i>
       <span>{{ category[0]}}</span>
     </a>
