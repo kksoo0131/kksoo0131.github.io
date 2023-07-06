@@ -46,7 +46,7 @@ sidebar에 대한 html코드는 _includes/sidebar.html에서 찾을수 있었다
 <!-- categories -->
     {% for category in site.categories %}
     <li class="nav-item{% if category.url contains category[0] %}{{ " active" }}{% endif %}">
-      <a href="{{ '/' | relative_url }}categories/{{category[0] | downcase}}/" class="nav-link">
+      <a href="{{ '/' | relative_url }}categories/{{category[0] | downcase | url_encode}}/" class="nav-link">
         <i class="fa-fw fas fa-foleder"></i>
         <span>{{ category[0]}}</span>
       </a>
@@ -56,11 +56,13 @@ sidebar에 대한 html코드는 _includes/sidebar.html에서 찾을수 있었다
 그리고 사이드 바의 홈 버튼과 다른 탭들 사이에 카테고리의 목록이 나오게 새로 코드를 추가했다.
 
 ## +
-CI 과정에서 문제가 발생했다.
-1. 경로 문제 -> 폴더는 소문자로 만들어지는데 대문자로 적어서 오류가 발생한거같음
-
+CI의 Test과정에서 문제가 발생했다.
+1. 폴더는 소문자로 만들어지는데 경로를 대문자로 적어서 오류가 발생 downcase 필터로 소문자로 변경
+2. c++카테고리의 폴더가 c로 만들어지는 문제 카테고리명을 cpp로 변경
 ## 다음 수정해야 할 내용
 
     1. 하위 카테고리 구분
 
     2. 특정 페이지만 사이드 바가 깨지는 문제
+
+    3. 카테고리명에 특수문자를 넣을수있는 방법
