@@ -110,11 +110,6 @@ defaults:
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
   - scope:
-      path: ""
-      type: categories
-    values:
-      permalink: /categories/:name/
-  - scope:
       path: _drafts
     values:
       comments: false
