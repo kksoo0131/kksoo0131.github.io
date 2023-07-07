@@ -33,7 +33,15 @@
       </a>
     </li>
 
-
+  <!-- categories -->
+  {% for category in site.categories %}
+    <li class="nav-item{% if category.url contains category[0] %}{{ " active" }}{% endif %}">
+    <a href="{{ '/categories/' | relative_url}}{{category[0] | downcase}}" class="mx-2">
+      <i class="fa-fw fas fa-foleder"></i>
+      <span>{{ category[0]}}</span>
+    </a>
+  </li>
+  {% endfor %}
 
     <!-- the real tabs -->
     {% for tab in site.tabs %}
