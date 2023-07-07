@@ -35,10 +35,10 @@ _sass/color 폴더를 확인해보니 dark-syntax.scss 파일이 다크모드 �
 ```
 
 ## 수정 전
-![before](/assets/img/post/2023-07-06-make-github-blog-3-1.jpg)
+![before](/assets/img/post/2023-07-06-make-github-blog-3-1.png)
 
 ## 수정 후
-![after](/assets/img/post/2023-07-06-make-github-blog-3-2.jpg)
+![after](/assets/img/post/2023-07-06-make-github-blog-3-2.png)
 
 ## 수정해야 할 내용
 
