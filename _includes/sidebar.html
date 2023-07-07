@@ -35,8 +35,8 @@
 
   <!-- categories -->
   {% for category in site.categories %}
-    <li class="nav-item{% if category.url contains category[0] %}{{ active }}{% endif %}">
-    <a href="{{ '/categories/' | relative_url }}{{category[0] | downcase | url_encode}}" class="mx-2">{{ category_name }}
+    <li class="nav-item{% if category.url contains category[0] %}{{ " active" }}{% endif %}">
+    <a href="{{ category.url | relative_url}}" class="mx-2">{{ category_name }}
       <i class="fa-fw fas fa-foleder"></i>
       <span>{{ category[0]}}</span>
     </a>
