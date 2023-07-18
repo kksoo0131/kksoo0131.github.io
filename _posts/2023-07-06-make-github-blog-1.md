@@ -1,5 +1,5 @@
 ---
-title: Blog 커스텀 도전
+title: [Blog] 커스텀 도전
 author: kksoo0131
 date: 2023-07-06 14:16:00 +0900
 categories: [Blog]

@@ -1,5 +1,5 @@
 ---
-title: 코드블럭 커스텀
+title: [Blog] 코드블럭 커스텀
 author: kksoo0131
 date: 2023-07-07 10:21:00 +0900
 categories: [Blog]
