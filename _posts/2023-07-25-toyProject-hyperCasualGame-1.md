@@ -33,7 +33,7 @@ render_with_liquid: false
 
 애니메이션이 있는 고양이2D 스프라이트를 발견했다. [Pet Cats Pixel Art Pack](https://assetstore.unity.com/packages/2d/characters/pet-cats-pixel-art-pack-248340)
 
-![고양이 에셋 사진](2023-07-25-toyProject-hyperCasualGame-1.webp)
+![고양이 에셋 사진](2023-07-25-toyProject-hyperCasualGame-1.jpg)
 
 
 그리고 일단 고양이가 출현하는 게임인건 확실하니 그에 어울리는 배경을 찾아 보기로 했다.
