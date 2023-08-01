@@ -143,4 +143,7 @@ render_with_liquid: false
 벡터의 외적을 사용하면 두 벡터에 대해서 수직인 새로운 벡터를 생성할 수 있다.
 
 > 벡터의 외적의 결과는 `벡터`이다.
-    
+
+
+## Reference
+[게임 수학의 이해 - 이득우](https://www.inflearn.com/course/%EA%B2%8C%EC%9E%84-%EC%88%98%ED%95%99-%EC%9D%B4%ED%95%B4/dashboard)    
