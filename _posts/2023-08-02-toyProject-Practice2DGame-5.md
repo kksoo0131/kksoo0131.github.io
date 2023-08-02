@@ -1,7 +1,7 @@
 ---
 title: 토이 프로젝트 - 2D 게임 실습 5
 author: kksoo0131
-date: 2023-08-02 17:00:00 +0900
+date: 2023-08-02 16:00:00 +0900
 categories: [toyProject, Unity]
 tags: [toyProject, Unity]
 render_with_liquid: false
