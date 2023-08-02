@@ -1,5 +1,5 @@
 ---
-title: 토이 프로젝트 - 하이퍼 캐주얼 게임 2
+title: 토이 프로젝트 - 2D 게임 실습 2
 author: kksoo0131
 date: 2023-07-27 17:00:00 +0900
 categories: [toyProject, Unity]
