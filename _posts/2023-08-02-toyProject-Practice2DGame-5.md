@@ -43,6 +43,6 @@ Screen.SetResolution(720, 1280, FullScreenMode.Windowed);
 
 ## 실행
 
-<video width = "360" height = "640"controls>
+<video width = "360" height = "640" controls>
     <source src = "/assets/videos/catchCat.mp4" type = "video/mp4">
 </video>
