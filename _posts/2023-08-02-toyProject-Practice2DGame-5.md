@@ -43,4 +43,6 @@ Screen.SetResolution(720, 1280, FullScreenMode.Windowed);
 
 ## 실행
 
-![게임 플레이 영상](/assets/videos/catchCat.mp4)
+<video controls>
+    <source src = "/assets/videos/catchCat.mp4" type = "video/mp4">
+</video>
