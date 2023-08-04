@@ -15,38 +15,22 @@ render_with_liquid: false
 
 1. 클래스 내부에서 정적 변수로 인스턴스를 생성한다
 
-```cs
-public class Singleton
-{
-    private static Singleton _singleton = new Singleton();
-}
-```
 > `정적 변수`는 `클래스 레벨에 선언`되므로, 클래스가 로드 될 때 메모리에 할당 되고 프로그램이 종료될 때 메모리에서 해제됩니다.
 >
 > 즉, `프로그램 실행 중에는 해당 변수가 계속 유지`된다.
 
-<br/>
-<br/>
-
 2. 인스턴스를 외부에서 추가로 생성할 수 없다. 
 
-```cs
-public class Singleton
-{
-    private Singleton() {}
-}
-```
 생성자를 private로 선언하여 외부에서 인스턴스를 생성할 수 없다.
-
-<br/>
-<br/>
 
 3. 인스턴스에 접근하기 위한 정적 메서드를 제공해 어디서든 접근할 수 있다.
 
 ```cs
 public class Singleton
 {
-    public static GetInstance() {return _singleton};
+    private static Singleton _singleton = new Singleton(); // 1 
+    private Singleton() {} // 2
+    public static GetInstance() {return _singleton}; // 3
 }
 ```
 <br/>
@@ -86,6 +70,9 @@ public class Managers : MonoBehaviour
 }
 
 ```
+유니티에서 게임의 전반적인 기능을 관리할 Manager 오브젝트
+
+MonoBehaviour를 상속받은 싱글톤 클래스로 만들어서 관리한다.
 
 <br/>
 <br/>
@@ -150,8 +137,13 @@ public class Managers : MonoBehaviour
 
         이를 통해 두 클래스의 결합도가 낮아진다.
 
+4. `상속` : 
+        
+        싱글톤 패턴 : 어떤 클래스를 상속받아서 싱글톤 클래스를 만들 수 있다, 즉 , 유니티에서라면 MonoBehaviour를 상속받아서 오브젝트로 싱글톤 인스턴스를 생성할 수 있다
 
-1. 사용목적:
+        static 클래스 : 다른 클래스를 상속받을수 없다.
+
+5. 사용목적:
 
         싱글톤 패턴 : 여러 곳에서 동일한 인스턴스를 공유해야 할 때 사용한다. 예를 들어, 게임의 매니저 클래스
 
