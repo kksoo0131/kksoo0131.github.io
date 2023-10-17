@@ -1,11 +1,14 @@
 ---
-title: Blog 코드블럭 커스텀
-author: kksoo0131
-date: 2023-07-07 10:21:00 +0900
-categories: [Blog]
-tags: [Blog]
-render_with_liquid: false
+layout: post
+title:  "Blog 코드블럭 커스텀"
+date:   2023-07-07
+excerpt: "Blog 코드블럭 커스텀"
+tag:
+- Blog
+- jekyll
+comments: true
 ---
+
 _sass/color 폴더를 확인해보니 dark-syntax.scss 파일이 다크모드 스타일을 정의하는것 같았고
 
 확인해보니 코드블럭안의 색상과 인라인코드 색상을 지정할수 있었다.

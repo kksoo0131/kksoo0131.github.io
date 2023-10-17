@@ -1,10 +1,11 @@
 ---
-title: GitHub Page 만들기
-author: kksoo0131
-date: 2023-06-27 09:28:00 +0900
-categories: [GitHub]
-tags: [writing]
-render_with_liquid: false
+layout: post
+title:  "GitHub Page 만들기"
+date:   2023-06-27
+excerpt: "GitHub Page 만들기"
+tag:
+- GitHub
+comments: true
 ---
 
 ## GitHub Page ?

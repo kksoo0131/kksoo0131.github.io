@@ -1,11 +1,13 @@
 ---
-title: 게임 수학의 소개 - 공간에 대한 수학
-author: kksoo0131
-date: 2023-07-26 17:50:00 +0900
-categories: [gameMathmatics]
-tags: [gameMathmatics]
-render_with_liquid: false
+layout: post
+title:  "게임 수학의 소개 - 공간에 대한 수학"
+date:   2023-07-26
+excerpt: "게임 수학 맛보기"
+tag:
+- gameMathmatics
+comments: true
 ---
+
 
 # `공간에 대한 수학`
 

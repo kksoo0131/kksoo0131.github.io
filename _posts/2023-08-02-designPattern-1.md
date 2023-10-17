@@ -1,10 +1,11 @@
 ---
-title: 디자인 패턴 - 싱글톤
-author: kksoo0131
-date: 2023-08-02 20:00:00 +0900
-categories: [DesignPattern]
-tags: [DesignPattern, Singleton]
-render_with_liquid: false
+layout: post
+title:  "디자인 패턴 - 싱글톤"
+date:   2023-08-02
+excerpt: "디자인 패턴"
+tag:
+- DesignPattern
+comments: true
 ---
 
 ## Singleton Pattern

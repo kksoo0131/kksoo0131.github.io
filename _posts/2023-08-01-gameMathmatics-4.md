@@ -1,10 +1,11 @@
 ---
-title: 게임 수학의 소개 - 회전의 수학 1
-author: kksoo0131
-date: 2023-08-01 18:30:00 +0900
-categories: [gameMathmatics]
-tags: [gameMathmatics]
-render_with_liquid: false
+layout: post
+title:  "게임 수학의 소개 - 회전의 수학 1"
+date:   2023-08-01
+excerpt: "게임 수학 맛보기"
+tag:
+- gameMathmatics
+comments: true
 ---
 
 ## 회전 이란?

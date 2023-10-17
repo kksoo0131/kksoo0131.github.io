@@ -1,10 +1,11 @@
 ---
-title: 게임 수학의 소개 - 물체에 대한 수학2 (물체를 움직이는 수학)
-author: kksoo0131
-date: 2023-07-27 16:30:00 +0900
-categories: [gameMathmatics]
-tags: [gameMathmatics]
-render_with_liquid: false
+layout: post
+title:  "게임 수학의 소개 - 물체에 대한 수학 2 (물체를 움직이는 수학)"
+date:   2023-07-27
+excerpt: "게임 수학 맛보기"
+tag:
+- gameMathmatics
+comments: true
 ---
 
 ## 게임 컨텐츠가 만들어지는 과정

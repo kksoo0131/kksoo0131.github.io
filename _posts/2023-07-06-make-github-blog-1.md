@@ -1,10 +1,12 @@
 ---
-title: Blog 커스텀 도전
-author: kksoo0131
-date: 2023-07-06 14:16:00 +0900
-categories: [Blog]
-tags: [Blog]
-render_with_liquid: false
+layout: post
+title:  "Blog 수정해보기"
+date:   2023-07-06
+excerpt: "Blog 수정해보기"
+tag:
+- Blog
+- jekyll
+comments: true
 ---
 
 jekyll-theme-chirpy 테마를 이용해서 블로그를 생성했는데 마음에 안드는 부분이 있어서 수정을 해보려고 한다.

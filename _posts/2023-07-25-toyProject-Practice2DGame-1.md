@@ -1,11 +1,15 @@
 ---
-title: 토이 프로젝트 - 2D 게임 실습 1
-author: kksoo0131
-date: 2023-07-25 17:00:00 +0900
-categories: [toyProject, Unity]
-tags: [toyProject, Unity]
-render_with_liquid: false
+layout: post
+title:  "토이 프로젝트 - 2D 게임 실습 1"
+date:   2023-07-25
+excerpt: "ToyProject로 복습"
+project: true
+tag:
+- Unity
+- ToyProject
+comments: true
 ---
+
 
 ## 시작
 
