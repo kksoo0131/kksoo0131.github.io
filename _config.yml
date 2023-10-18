@@ -63,11 +63,12 @@ steam:              jimili0820
 #hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+
 
 jekyll-mentions:
     base_url: https://github.com
