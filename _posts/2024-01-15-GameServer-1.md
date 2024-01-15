@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "게임 서버 개론"
+title:  "서버란 무엇인가?"
 date:   2024-01-15
-excerpt: "서버"
+excerpt: "게임 서버"
 tag:
 - 서버
 - 게임 서버
